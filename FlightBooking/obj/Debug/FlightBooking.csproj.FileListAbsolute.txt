@@ -7,3 +7,12 @@ D:\GitHub\FlightBooking\FlightBooking\FlightBooking\bin\Microsoft.CodeDom.Provid
 D:\GitHub\FlightBooking\FlightBooking\FlightBooking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\GitHub\FlightBooking\FlightBooking\FlightBooking\obj\Debug\FlightBooking.dll
 D:\GitHub\FlightBooking\FlightBooking\FlightBooking\obj\Debug\FlightBooking.pdb
+D:\GitHub\FlightBooking\FlightBooking\bin\FlightBooking.dll.config
+D:\GitHub\FlightBooking\FlightBooking\bin\FlightBooking.dll
+D:\GitHub\FlightBooking\FlightBooking\bin\FlightBooking.pdb
+D:\GitHub\FlightBooking\FlightBooking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\GitHub\FlightBooking\FlightBooking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\GitHub\FlightBooking\FlightBooking\obj\Debug\FlightBooking.csprojResolveAssemblyReference.cache
+D:\GitHub\FlightBooking\FlightBooking\obj\Debug\FlightBooking.csproj.CoreCompileInputs.cache
+D:\GitHub\FlightBooking\FlightBooking\obj\Debug\FlightBooking.dll
+D:\GitHub\FlightBooking\FlightBooking\obj\Debug\FlightBooking.pdb
