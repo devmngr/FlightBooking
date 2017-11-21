@@ -62,7 +62,7 @@
             left: 14px;
             z-index: 1;
         }
-    </style>
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
