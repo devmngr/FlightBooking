@@ -10,7 +10,7 @@ namespace FlightBooking
 {
     public partial class RegisterCustomer : System.Web.UI.Page
     {
-        SqlConnection conn;
+        private SqlConnection conn;
         protected void Page_Load(object sender, EventArgs e){
         }
 
@@ -81,6 +81,8 @@ namespace FlightBooking
         private bool CustomerExists(string name)
         {
             string sql = "use FlightBooking select count(*) from customer where name = '" + name + "'";
+
+
             SqlCommand command = new SqlCommand(sql, conn);
             command.Connection.Open();
             int count = 0;
