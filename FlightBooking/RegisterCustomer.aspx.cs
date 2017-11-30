@@ -11,7 +11,8 @@ namespace FlightBooking
     public partial class RegisterCustomer : System.Web.UI.Page
     {
         private SqlConnection conn;
-        protected void Page_Load(object sender, EventArgs e){
+        protected void Page_Load(object sender, EventArgs e)
+        {
         }
 
         protected void register_btn_Click(object sender, EventArgs e)
@@ -20,29 +21,34 @@ namespace FlightBooking
             string username = register_username_txt.Text;
             string password = register_password_txt.Text;
             ConnectToDb();
-            if(String.IsNullOrEmpty(name.Trim()) || String.IsNullOrEmpty(username.Trim()) || String.IsNullOrEmpty(password.Trim())){
+            if (String.IsNullOrEmpty(name.Trim()) || String.IsNullOrEmpty(username.Trim()) || String.IsNullOrEmpty(password.Trim()))
+            {
                 error_lbl.Text = "All fields are mandatory !";
             }
-            else if (CustomerExists(name)){
+            else if (CustomerExists(name))
+            {
                 error_lbl.Text = "Customer already exists !";
             }
 
-            else if (LoginExists(username)){
+            else if (LoginExists(username))
+            {
                 error_lbl.Text = "Username already exists !";
             }
-            else{
+            else
+            {
                 AddCustomer(name, username, password);
-                error_lbl.Text = "User successfully registered !";
+                error_lbl.Text = "User successfully registered ! Go to Login!";
             }
         }
-        private void ConnectToDb(){
+        private void ConnectToDb()
+        {
             conn = new SqlConnection("Data Source = HELLO; Initial Catalog = FlightBooking; Integrated Security = True");
         }
         private bool AddCustomer(string name, string username, string password)
         {
             int id = CreateLogin(username, password);
             string sql = "use FlightBooking insert into customer values ( next value for sqKey,'" + name + "'," + id + ")";
-           SqlCommand command = new SqlCommand(sql, conn);
+            SqlCommand command = new SqlCommand(sql, conn);
             command.Connection.Open();
             command.ExecuteNonQuery();
             command.Connection.Close();
@@ -89,7 +95,7 @@ namespace FlightBooking
 
             try
             {
-            count = (Int32)command.ExecuteScalar();
+                count = (Int32)command.ExecuteScalar();
             }
             catch (SqlException e)
             {
@@ -97,6 +103,12 @@ namespace FlightBooking
             }
             command.Connection.Close();
             return count != 0;
+        }
+
+
+        protected void login_registration_btn_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
         }
     }
 }

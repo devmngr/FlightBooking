@@ -38,6 +38,23 @@
             z-index: 1;
             left: 312px;
         }
+        .auto-style6 {
+            position: absolute;
+            top: 334px;
+            left: 348px;
+            z-index: 1;
+            width: 98px;
+            height: 40px;
+            right: 2137px;
+        }
+        .auto-style7 {
+            position: absolute;
+            top: 417px;
+            left: 303px;
+            z-index: 1;
+            width: 219px;
+            height: 41px;
+        }
     </style>
 </head>
 <body style="height: 618px; z-index: 1; width: 2583px; position: absolute; top: 0px; left: 0px">
@@ -50,6 +67,10 @@
         <asp:Label ID="username_lbl" runat="server" CssClass="auto-style1" Text="Username"></asp:Label>
         <p>
             <asp:Label ID="password_lbl" runat="server" CssClass="auto-style5" Text="Password"></asp:Label>
+        </p>
+        <asp:Button ID="register_btn" runat="server" CssClass="auto-style6" OnClick="register_btn_Click" Text="Register" />
+        <p>
+            <asp:Label ID="error_lbl" runat="server" CssClass="auto-style7"></asp:Label>
         </p>
     </form>
 </body>

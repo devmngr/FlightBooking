@@ -62,6 +62,12 @@
             left: 14px;
             z-index: 1;
         }
+        .auto-style10 {
+            position: absolute;
+            top: 437px;
+            left: 85px;
+            z-index: 1;
+        }
         </style>
 </head>
 <body>
@@ -75,6 +81,7 @@
             <asp:TextBox ID="register_username_txt" runat="server" CssClass="auto-style7"></asp:TextBox>
             <asp:TextBox ID="register_password_txt" runat="server" CssClass="auto-style8"></asp:TextBox>
             <asp:Label ID="error_lbl" runat="server" CssClass="auto-style9"></asp:Label>
+            <asp:Button ID="login_registration_btn" runat="server" CssClass="auto-style10" OnClick="login_registration_btn_Click1" Text="Login" />
         </div>
     </form>
 </body>
